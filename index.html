@@ -5,51 +5,15 @@
 <title>zenith</title>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-<style type="text/css">
-html, body {
-    background-color: #000;
-    font-family: 'Fira Code', monospace;
-    margin: 20px;
-}
-
-.console {
-    position: relative;
-    display: inline-block;
-    font-family: 'Fira Code', monospace;
-    line-height: 18px;
-    font-size: 18px;
-    color: #D4A989;
-}
-
-.console::after {
-  content: "";
-  position: absolute;
-  top: -1px;
-  right: -20px;
-  display: inline-block;
-  background-color: #826a57;
-  vertical-align: top;
-  width: 10px;
-  /* Set height to the line height of .text */
-  height: 20px;
-  -webkit-animation: blink 1s step-end infinite;
-  animation: blink 1s step-end infinite;
-}
-
-@-webkit-keyframes blink {
-  0% { opacity: 1.0; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1.0; }
-}
-
-@keyframes blink {
-  0% { opacity: 1.0; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1.0; }
-}
-</style>
+<link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <div class="console">zenith &rsaquo;</div>
+    <div id="console">
+        <div class="console-line active">
+            <div class="prompt">zenith &rsaquo;</div>
+            <div class="body"></div>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
