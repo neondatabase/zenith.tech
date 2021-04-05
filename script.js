@@ -253,7 +253,7 @@ const files = [
 <b>zenith.tech</b>
 <p>coming soon to a server near you</p>
 <ul>
-    <li><a target="_blank" href="https://github.com/libzenith">Github</a></li>
+    <li><a target="_blank" href="https://github.com/zenithdb">Github</a></li>
 </ul>
 `,
   },
@@ -266,7 +266,6 @@ const files = [
     content: `
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196.14814814814815 252.13099691873754" width="196.14814814814815" height="252.13099691873754">
   <!-- svg-source:excalidraw -->
-  
   <defs>
     <style>
       @font-face {
