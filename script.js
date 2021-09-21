@@ -17,7 +17,7 @@ let tmpCmd = null;
 let historyOffset = null;
 
 let $console = document.getElementById("console");
-let currentLine = document.getElementsByClassName("console-line")[0];
+let currentLine = document.getElementsByClassName("console-line")[1];
 let currentBody = currentLine.getElementsByClassName("body")[0];
 const consoleLineTemplate = currentLine.cloneNode(true);
 
@@ -248,18 +248,16 @@ const commands = {
 
 const files = [
   {
-    name: "readme",
+    name: "jobs.txt",
     content: `
-<b>zenith.tech</b>
-<p>coming soon to a server near you</p>
+<p>We're currently looking for:</p>
 <ul>
-    <li><a target="_blank" href="https://github.com/zenithdb">Github</a></li>
+  <li>Systems Software Engineer - distributed storage engine (Rust) and Postgres extension</li>
+  <li>Backend/Web Engineer - web console, serverless API</li>
+  <li>Infrastructure Engineer - cloud orchestration, database proxy</li>
 </ul>
+<p>To apply, please send a resume and cover letter to <a href="mailto:jobs@zenith.tech">jobs@zenith.tech</a></p>
 `,
-  },
-  {
-    name: "team",
-    content: `<i>TODO</i>`,
   },
   {
     name: "rocket.svg",

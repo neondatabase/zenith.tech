@@ -60,6 +60,6 @@ html, body {
     overflow-wrap: anywhere;
 }
 
-.stdout a {
+#console a {
     color: #B9A08E;
 }
